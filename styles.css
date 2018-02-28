@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+#container{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: 
+        "head head"
+        "nav nav"
+        "body body"
+        "footer footer";
+        grid-template-rows: 90px 50px 1fr 60px;
+        grid-template-columns: 1fr;
+      }
+.heading{
+    grid-area: head;
+    background: rgb(32,35,41);
+}
+.nav{
+    display: grid;
+    grid-area: nav;
+    background: rgb(32,35,41);
+}
+.body{
+    grid-area: body;
+    background-repeat: no-repeat;
+    background-image: url(./img/star-night.jpg);
+    
+}
+.footer{
+    grid-area: footer;
+    height: 100%;
+    background: rgb(32,35,41);
+}
+.nav-grid{
+    display: grid;
+    padding-left: 0px;
+    margin-top: 0px;
+    list-style-type: none;
+    grid-template-columns: auto auto auto auto;
+    
+}
+a{
+    text-decoration: none;
+}
+#logo{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+    color: rgb(216,209,192);
+}
+h4{
+    margin-top: 0px;
+    color: rgb(216,209,192);
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+.display-container{
+    grid-column-start: content-start;
+    grid-row-start: main-start;
+    margin-top: 20px;
+    height: 90%;
+    width: 100%;
+}
+.mySlides{
+    /* grid-area: m; */
+    width: 100%;
+}
+.moving{
+    display: grid;
+    width: 100%;
+    grid-template-rows: [main-start]auto [content-start]auto [content-end] 400px [main-end];
+    grid-template-columns: [main-start] 1fr [content-start] 1fr [content-end] 1fr [main-end];
+    
+}
+.centerBox{
+    grid-area: content; 
+}
+.display-left{
+    grid-area: l1;
+    margin-left: 40px;
+    /* display: flex; */
+    /* top: 85%; */
+    /* left: 0%; */
+    /* transform: translate(0%, -50%); */
+}
+.display-right{
+    grid-area: r1;
+    margin-right: 40px;
+   /* position: relative; */
+   /* bottom: 174px; */
+   /* left: 451px; */
+}
+.button-grid{
+    display: grid;
+    grid-template-areas: 
+    "l1 . r1";
+    /* grid-template-columns: 1fr 500px 1fr; */
+}
+#submit{
+    padding: 12px;
+    border-radius: 6px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.navb{
+    padding: 12px;
+    border-radius: 6px;
+}
+li{
+    display: grid;
+    align-self: center;
+    justify-content: center;
+}
+.image{
+    float: right;
+    height: 100%;
+    width: 50%;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;   
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+#aboutHeading{
+    padding-right: 20px;
+}
+#facebook{
+    height: 40px;
+    
+}
